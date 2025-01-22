@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player Demo</title>
+    <link rel="stylesheet" href="../dist/css/video-player.min.css">
+</head>
+<body>
+    <div id="demo-player"></div>
+
+    <script src="../dist/js/video-player.min.js"></script>
+    <script>
+        const player = new CustomVideoPlayer();
+        const videoElement = player.createVideoPlayer(
+            'https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4',
+            null,
+            null
+        );
+        document.getElementById('demo-player').innerHTML = videoElement;
+        player.initializePlayers();
+    </script>
+</body>
+</html>
