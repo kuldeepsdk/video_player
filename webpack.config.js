@@ -5,8 +5,8 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: {
-    'video-player': './src/js/video-player.js',
-    'video-player.min': './src/js/video-player.js',
+    'video-player': path.resolve(__dirname, 'src/js/video-player.js'),
+    'video-player.min': path.resolve(__dirname, 'src/js/video-player.js')
   },
   output: {
     path: path.resolve(__dirname, 'dist/js'),
@@ -14,7 +14,7 @@ module.exports = {
     library: 'CustomVideoPlayer',
     libraryTarget: 'umd',
     libraryExport: 'default',
-    umdNamedDefine: true,
+    umdNamedDefine: true
   },
   module: {
     rules: [

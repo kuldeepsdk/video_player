@@ -4,8 +4,7 @@
     "description": "A customizable HTML5 video player with modern controls",
     "main": "dist/js/video-player.min.js",
     "scripts": {
-      "build": "webpack --mode production",
-      "dev": "webpack --mode development --watch"
+      "build": "webpack --mode production"
     },
     "keywords": [
       "video",
@@ -13,7 +12,7 @@
       "html5",
       "javascript"
     ],
-    "author": "Kuldeep",
+    "author": "Your Name",
     "license": "MIT",
     "devDependencies": {
       "@babel/core": "^7.23.0",
